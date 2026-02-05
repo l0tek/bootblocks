@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "custom": true,
+      "customGradient": false
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Roboto, system-ui, -apple-system, Segoe UI, sans-serif",
+          "slug": "roboto",
+          "name": "Roboto"
+        }
+      ]
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "page-container",
+      "title": "Page (Container)",
+      "postTypes": ["page"]
+    },
+    {
+      "name": "page-fluid",
+      "title": "Page (Container Fluid)",
+      "postTypes": ["page"]
+    }
+  ]
+}

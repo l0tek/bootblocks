@@ -1,0 +1,109 @@
+/*
+Theme Name: BootBlocks
+Theme URI: https://example.com/bootblocks
+Author: BootBlocks
+Author URI: https://example.com
+Description: Bootstrap 5 powered block theme.
+Version: 1.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootblocks
+Tags: bootstrap, responsive
+*/
+
+:root {
+    --bootblocks-wrap-max: 1140px;
+}
+
+body {
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.site-wrap {
+    max-width: var(--bootblocks-wrap-max);
+    margin: 0 auto;
+}
+
+.bootblocks-carousel-hero {
+    background: #6c757d;
+}
+
+.bootblocks-carousel-hero .wp-block-cover__inner-container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.bootblocks-carousel-hero h1,
+.bootblocks-carousel-hero p {
+    color: #fff;
+}
+
+.bootblocks-indicators {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.bootblocks-indicator {
+    width: 30px;
+    height: 3px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bootblocks-marketing {
+    gap: 2rem;
+}
+
+.bootblocks-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #adb5bd;
+}
+
+.bootblocks-marketing p {
+    color: #adb5bd;
+}
+
+.navbar {
+    position: sticky;
+    top: var(--wp-admin--admin-bar--height, 0px);
+    z-index: 1030;
+}
+
+header.wp-block-template-part {
+    position: sticky;
+    top: var(--wp-admin--admin-bar--height, 0px);
+    z-index: 1030;
+}
+
+header.wp-block-template-part .navbar {
+    position: static !important;
+}
+
+.home .wp-block-cover.alignfull {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.bootblocks-carousel {
+    height: 500px;
+}
+
+.bootblocks-carousel .carousel-inner,
+.bootblocks-carousel .carousel-item,
+.bootblocks-carousel .carousel-item img {
+    height: 100%;
+}
+
+.bootblocks-carousel .carousel-item img {
+    object-fit: cover;
+}
+
+.bootblocks-carousel {
+    height: var(--bootblocks-carousel-height, 500px);
+}

@@ -1,0 +1,17 @@
+.bootblocks-editor-note {
+    padding: 0.5rem 0.75rem;
+    border: 1px dashed #ced4da;
+    border-radius: 0.5rem;
+    background: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.editor-styles-wrapper {
+    font-family:
+        "Roboto",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+}
