@@ -107,3 +107,48 @@ header.wp-block-template-part .navbar {
 .bootblocks-carousel {
     height: var(--bootblocks-carousel-height, 500px);
 }
+
+
+
+.bootblocks-navbar .wp-block-navigation-item__content:hover,
+.bootblocks-navbar .wp-block-navigation-item__content:focus {
+    color: var(--wp--preset--color--light, #cdecd5) !important;
+}
+
+.bootblocks-navbar .wp-block-search__input {
+    background: var(--wp--preset--color--white, #ffffff);
+    border-color: var(--wp--preset--color--light, #cdecd5);
+}
+
+.bootblocks-navbar .wp-block-search__button {
+    border-color: var(--wp--preset--color--primary, #19b348);
+    color: var(--wp--preset--color--primary, #19b348);
+}
+
+.bootblocks-navbar .wp-block-search__button:hover {
+    background: var(--wp--preset--color--primary, #19b348);
+    color: var(--wp--preset--color--white, #ffffff);
+}
+
+.navbar.bg-dark {
+    background-color: var(--wp--preset--color--primary, #19b348) !important;
+}
+
+.navbar.bg-dark .navbar-brand,
+.navbar.bg-dark .wp-block-navigation-item__content,
+.navbar.bg-dark .wp-block-site-title a {
+    color: #ffffff !important;
+}
+
+
+
+
+.navbar.bg-dark .wp-block-search .wp-block-search__button {
+    background: transparent !important;
+    border: 2px solid var(--wp--preset--color--warning, #f5dd61) !important;
+    color: var(--wp--preset--color--warning, #f5dd61) !important;
+}
+
+.navbar.bg-dark .wp-block-search .wp-block-search__button:hover {
+    background: rgba(245, 221, 97, 0.18) !important;
+}

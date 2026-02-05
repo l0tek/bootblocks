@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "title": "Midnight",
+  "styles": {
+    "color": {
+      "background": "#0f172a",
+      "text": "#e2e8f0"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#38bdf8"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#38bdf8",
+          "text": "#0f172a"
+        }
+      }
+    }
+  }
+}

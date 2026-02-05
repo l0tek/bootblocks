@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "title": "Huemint",
+  "styles": {
+    "color": {
+      "background": "#FFFFFF",
+      "text": "#343A40"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#6A4A9D"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#19B348",
+          "text": "#FFFFFF"
+        }
+      }
+    }
+  }
+}

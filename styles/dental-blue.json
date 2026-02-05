@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "title": "Dental Blue",
+  "styles": {
+    "color": {
+      "background": "#f7fbfe",
+      "text": "#1b2a3a"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#1b9bd7"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#1b9bd7",
+          "text": "#ffffff"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "title": "Soft Sand",
+  "styles": {
+    "color": {
+      "background": "#f6efe8",
+      "text": "#2c2a28"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#8a6d5a"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#8a6d5a",
+          "text": "#ffffff"
+        }
+      }
+    }
+  }
+}

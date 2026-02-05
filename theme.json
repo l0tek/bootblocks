@@ -6,6 +6,18 @@
       "wideSize": "1280px"
     },
     "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "name": "Light", "slug": "light", "color": "#CDECD5" },
+        { "name": "White", "slug": "white", "color": "#FFFFFF" },
+        { "name": "Primary", "slug": "primary", "color": "#19B348" },
+        { "name": "Info", "slug": "info", "color": "#6A4A9D" },
+        { "name": "Secondary", "slug": "secondary", "color": "#9F9ED7" },
+        { "name": "Warning", "slug": "warning", "color": "#F5DD61" },
+        { "name": "Danger", "slug": "danger", "color": "#C0392B" },
+        { "name": "Dark", "slug": "dark", "color": "#343A40" },
+        { "name": "Success", "slug": "success", "color": "#19B348" }
+      ],
       "custom": true,
       "customGradient": false
     },
@@ -17,6 +29,27 @@
           "name": "Roboto"
         }
       ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#FFFFFF",
+      "text": "#343A40"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#6A4A9D"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#19B348",
+          "text": "#FFFFFF"
+        }
+      }
     }
   },
   "customTemplates": [
