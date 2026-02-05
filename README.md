@@ -1,62 +1,28 @@
 # BootBlocks Theme
 
-This repository contains the **BootBlocks** WordPress block theme.
+Bootstrap‑basiertes WordPress‑Block‑Theme mit Container/Container‑Fluid Layouts.
 
-## What Was Done Today
+## Installation
 
-### WordPress Reset + Setup
-- Stopped containers and removed volumes (`docker compose down -v`).
-- Brought WordPress back up fresh (`docker compose up -d --build`).
-- Installed WordPress via WP‑CLI.
-- Switched site language to **German (de_DE)**.
-- Purged all posts/pages, created a new **Startseite** (homepage), and set it as the front page.
+1. Theme nach `wp-content/themes/bootblocks` kopieren.
+2. In WordPress unter **Design → Themes** aktivieren.
 
-### Theme Structure
-- Rebuilt the theme as a block theme with templates and template parts.
-- Added **container** and **container-fluid** page templates:
-  - `templates/page-container.html`
-  - `templates/page-fluid.html`
-- Registered those templates in `theme.json` so they appear in the page settings dropdown.
-- Ensured the **navigation width matches the chosen template** by adding two header variants:
-  - `parts/header-container.html`
-  - `parts/header-fluid.html`
+## Nutzung
 
-### Editor “Invalid Block” Fixes
-- Fixed multiple invalid block errors caused by mismatched block wrappers in templates/parts.
-- Cleaned up database template parts that were overriding theme files.
-- Removed old revisions and trashed content to avoid stale/invalid blocks reappearing.
-
-### Carousel Work
-- Brought back BootBlocks custom blocks (via `assets/js/blocks.js`).
-- Added a **height control** to the BootBlocks carousel block (slider in block settings).
-- Made carousel height consistent with `object-fit: cover`.
-- Ensured front‑end and editor rendering stay in sync by shifting carousel output to a **server‑rendered** block in `functions.php`.
-
-### Sticky Navigation
-- Implemented sticky header behavior using the template part wrapper.
-
-### File Highlights
-- `functions.php` — theme setup, assets, editor assets, and server‑rendered carousel.
-- `assets/js/blocks.js` — BootBlocks block registrations + carousel height setting.
-- `style.css` — layout styles, carousel height CSS variable, sticky header, etc.
-- `theme.json` — template registration for container vs. fluid.
-- `templates/` + `parts/` — cleaned and valid block markup only.
-
-## How To Use Templates
-In the page editor, open **Page Settings → Template** and choose:
+### Templates (Container vs. Container‑Fluid)
+Im Seiten‑Editor unter **Seite → Template** wählst du:
 - **Page (Container)**
 - **Page (Container Fluid)**
 
-These templates automatically select the matching header width.
+Die Navigation passt sich automatisch an die jeweilige Breite an.
 
-## Development Notes
-- Theme path: `wp-content/themes/bootblocks`
-- Git initialized in this theme directory.
-- Remote: `git@github.com:l0tek/bootblocks.git`
+### Carousel‑Block (BootBlocks)
+Im Block‑Inserter findest du die Kategorie **BootBlocks** mit dem Carousel‑Block.
+Die Höhe lässt sich im Block‑Inspector unter **Carousel Settings → Height (px)** einstellen.
 
-## Admin Access (local)
-- URL: `http://localhost`
-- User: `admin`
-- Password: `Admin123!`
-
-(Please change the password after login.)
+## Struktur
+- `functions.php` – Theme‑Setup, Assets, Block‑Registrierung
+- `assets/js/blocks.js` – BootBlocks‑Blocks
+- `style.css` – Theme‑Styles
+- `templates/` – Page Templates
+- `parts/` – Header/Footer Template‑Teile
